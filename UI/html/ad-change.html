@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body  onload="document.getElementById('id01').style.display='block'">
+
+  <h2>edit only those you need to change</h2>
+  
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="ad-profile.html" method="post">
+      
+  
+      <div class="container">
+        <label for="logo"><b>papel-bank-admin</b></label>
+        <input type="text" placeholder="firstname" name="fname" >
+        <input type="surname" placeholder="surname" name="sname" >
+        <input type="number" placeholder="national-id" name="nid">
+        <input type="email" placeholder="email" name="email" >  
+        <input type="number" placeholder="telephone" name="tel">
+        <input type="password" placeholder="current-password" name="c-pswd" required>
+        <input type="password" placeholder="new-password" name="pswd" >
+        <input type="file" placeholder="photo" name="pic">
+        <button type="submit">change</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+     <a href="ad-profile.html">   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></a>
+      </div>
+    </form>
+  </div>
+  
+<script src="UI/js/login.js"></script>
+
+</body>
+</html>

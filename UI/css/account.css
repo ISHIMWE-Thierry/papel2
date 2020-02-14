@@ -1,0 +1,50 @@
+:root {
+	--clr:#006194;
+}
+body{
+	min-height: 100vh;
+	display: grid;
+	place-items:center;
+	font-family: "pt sans narrow",sans-serf;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 20px -10px black;
+	overflow: hidden;
+	border-radius: 20px;
+	width:80%;
+	max-width: 500px;
+}
+.form-input,.form-button{
+	font-family: inherit;
+	text-transform: uppercase;
+	font-weight: 800px;
+	font-size:10px;
+	letter-spacing: 1.2px;
+	border:0;
+}
+.form-input{
+	padding: 1.5em;
+	font-size: 15px;
+	width: 100%;
+	text-transform:lowercase; 
+
+
+}
+
+.form-button{
+	background: var(--clr);
+	color: white;
+	padding: 1em 2em;
+	height: 100px;
+	font-size: 30px;
+}
+.form-button:hover{
+	opacity:.8;
+	background-color: black;
+}
+.form-button:focus{
+	background-color:green
+}
