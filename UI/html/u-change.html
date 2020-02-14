@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body  onload="document.getElementById('id01').style.display='block'">
+
+  <h2></h2>
+  
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="profile.html" method="post">
+      
+  
+      <div class="container">
+        <label for="logo"><b>papel-bank-user-reset password</b></label>
+        <input type="password" placeholder="current password" name="cu-pswd" required >
+        <input type="password" placeholder="new password" name="ne-pswd" required>
+        <input type="password" placeholder="re-type password" name="re-pswd" required>
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+     <a href="profile.html">   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></a>
+     <button type="submit"  class="cancelbtn">save</button>
+      </div>
+    </form>
+  </div>
+  
+<script src="UI/js/login.js"></script>
+
+</body>
+</html>

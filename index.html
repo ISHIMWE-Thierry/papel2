@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="UI/css/login.css">
+</head>
+<body onload="document.getElementById('id01').style.display='block'">
+  
+  <h2></h2>
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="UI/html/profile.html" method="post">
+  
+      <div class="container">
+        <label for="logo"><b>papel-bank-user-login</b></label>
+        <input type="text" placeholder="login-id" name="login" required>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button class="submit" type="submit">Login</button>
+
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+       <a href="UI/html/home.html"> <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+       <a href="UI/html/signup.html"> <button type="button"  class="cancelbtn">create account</button></a>
+      
+      </div>
+
+    </form>
+  </div>
+ 
+<script src="UI/js/login.js"></script>
+
+</body>
+</html>

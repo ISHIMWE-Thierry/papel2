@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body  onload="document.getElementById('id01').style.display='block'">
+
+  <h2></h2>
+  
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="profile.html" method="post">
+      
+  
+      <div class="container">
+        <label for="logo"><b>papel-bank-account-creation</b></label>
+        <input type="text" placeholder="firstname" name="fname" required>
+        <input type="surname" placeholder="surname" name="sname" required>
+        <input type="number" placeholder="national-id" name="nid" required>
+        <input type="email" placeholder="email" name="email" required>  
+        <input type="number" placeholder="telephone" name="tel">
+        <input type="password" placeholder="password" name="pswd" required>
+        <input type="file" placeholder="photo" name="pic">
+        <button type="submit">create</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+     <a href="../../index.html">   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></a>
+      </div>
+    </form>
+  </div>
+  
+<script src="UI/js/login.js"></script>
+
+</body>
+</html>
